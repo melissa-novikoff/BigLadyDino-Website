@@ -1,14 +1,16 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino's Art</title>
-    <link href="/gallery.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Gabriela&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
         $(function() {
-          $('#header').load('/header.html');
+          $('#header').load('header.html');
           $('#footer').load('footer.html');
         });
       </script>
@@ -16,45 +18,10 @@
   <body>
     <div id="header"></div>
     <main>
-            <!-- The grid: four columns -->
-      <div class="row">
-        <div class="column">
-          <img src="images/art/fox_drawing.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/art/flower_triceratops.png" alt="Snow" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/art/wolf_drawing.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="images/art/pumpkin_dino.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
-      </div>
-      
-      <!-- The expanding image container -->
-      <div class="container">
-        <!-- Close the image -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      
-        <!-- Expanded image -->
-        <img id="expandedImg" style="width:100%">
-      
-        <!-- Image text -->
-        <div id="imgtext"></div>
-      </div>
-      
-      <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-      }
-      </script>
-      
+      <p>art</p>
     </main>
-    <div id="footer"></div>
   </body>
+  <footer>
+    <div id="footer"></div>
+  </footer> 
 </html>
