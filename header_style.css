@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-container > img {
+    min-width: 50%;
+    flex: initial;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links-container > a {
+    flex: initial;
+    background-color: #f71e95;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 3px dotted rgb(167, 10, 167);
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+  }
