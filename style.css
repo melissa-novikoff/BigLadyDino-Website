@@ -6,6 +6,41 @@ body {
   font-family: 'Gabriela';
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  gap: 32px;
+  padding: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+  border: 1px solid #eee;
+  background-color: rgb(252, 235, 235);
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;  
+  width: 500px;
+  padding: 16px;
+}
+
+.card img {
+  width: 500px;
+  height: auto;
+}
+
 h1 {
   color: MediumVioletRed;
   text-align: center;
@@ -17,8 +52,6 @@ h1 {
 ul {
   list-style: url(images/heart_bullet.png);
   list-style-position: inside;
-  /* width: 500px;
-  margin: 10px auto 0 auto; */
   padding: 0;
 }
 
@@ -32,6 +65,11 @@ ul {
   width: 500px; 
   height: auto; 
   margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
 }
 
 p {
